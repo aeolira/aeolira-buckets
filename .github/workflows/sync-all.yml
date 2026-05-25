@@ -10,7 +10,6 @@ on:
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
-# 🌟 强行索要写入权限，双重保险防 128 错误
 permissions: write-all
 
 jobs:
@@ -19,6 +18,9 @@ jobs:
     steps:
       - name: Checkout Your Repo
         uses: actions/checkout@v4
+        with:
+          # 🌟 关键修正 1：显式传入本地 Token，让本地的 git 保持完全的认证状态
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Clear old files
         run: |
@@ -49,4 +51,6 @@ jobs:
           git config --local user.name "GitHub Action"
           git add buckets/
           git commit -m "Automated Sync: $(date +'%Y-%m-%d %H:%M')" || exit 0
-          git push
+          
+          # 🌟 关键修正 2：绝不使用模糊的 git push，而是强行带上临时通行证，精准推送到 main 分支
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
