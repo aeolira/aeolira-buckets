@@ -7,7 +7,6 @@ on:
     - cron: '0 0 * * *'
   workflow_dispatch:
 
-# 🌟 2026 最新标准：全局强制所有 Action 运行在 Node.js 24 上，彻底消除警告
 env:
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
@@ -23,21 +22,22 @@ jobs:
           mkdir -p buckets/extras buckets/versions buckets/dorado
           rm -rf buckets/extras/* buckets/versions/* buckets/dorado/*
 
+      # 🌟 修复核心：使用 GitHub 官方内置的临时通行证（github.token）注入链接，100% 免疫匿名无权限报错
       - name: Sync Scoop-Extras
         run: |
-          git clone --depth=1 https://github.com/ScoopInstaller/Extra.git temp_extras
+          git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/ScoopInstaller/extra.git temp_extras
           cp -r temp_extras/bucket/* buckets/extras/ 2>/dev/null || cp -r temp_extras/* buckets/extras/
           rm -rf temp_extras
 
       - name: Sync Scoop-Versions
         run: |
-          git clone --depth=1 https://github.com/ScoopInstaller/Versions.git temp_versions
+          git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/ScoopInstaller/versions.git temp_versions
           cp -r temp_versions/bucket/* buckets/versions/ 2>/dev/null || cp -r temp_versions/* buckets/versions/
           rm -rf temp_versions
 
       - name: Sync Dorado
         run: |
-          git clone --depth=1 https://github.com/chawyehsu/dorado.git temp_dorado
+          git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/chawyehsu/dorado.git temp_dorado
           cp -r temp_dorado/bucket/* buckets/dorado/ 2>/dev/null || cp -r temp_dorado/* buckets/dorado/
           rm -rf temp_dorado
 
