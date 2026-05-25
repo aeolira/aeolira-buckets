@@ -19,31 +19,46 @@ jobs:
       - name: Checkout Your Repo
         uses: actions/checkout@v4
         with:
-          # 🌟 关键修正 1：显式传入本地 Token，让本地的 git 保持完全的认证状态
           token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Clear old files
+      # 🌟 核心升级：动态读取 sources.txt，有多少个源就自动循环同步多少个，完全解耦！
+      - name: Parse and Sync All Buckets
         run: |
-          mkdir -p buckets/extras buckets/versions buckets/dorado
-          rm -rf buckets/extras/* buckets/versions/* buckets/dorado/*
-
-      - name: Sync Scoop-Extras
-        run: |
-          git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/ScoopInstaller/extra.git temp_extras
-          cp -r temp_extras/bucket/* buckets/extras/ 2>/dev/null || cp -r temp_extras/* buckets/extras/
-          rm -rf temp_extras
-
-      - name: Sync Scoop-Versions
-        run: |
-          git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/ScoopInstaller/versions.git temp_versions
-          cp -r temp_versions/bucket/* buckets/versions/ 2>/dev/null || cp -r temp_versions/* buckets/versions/
-          rm -rf temp_versions
-
-      - name: Sync Dorado
-        run: |
-          git clone --depth=1 https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/chawyehsu/dorado.git temp_dorado
-          cp -r temp_dorado/bucket/* buckets/dorado/ 2>/dev/null || cp -r temp_dorado/* buckets/dorado/
-          rm -rf temp_dorado
+          # 确保 buckets 基础目录存在
+          mkdir -p buckets
+          
+          # 逐行读取花名册，忽略空行和以 # 开头的注释行
+          while IFS='|' read -r name url || [ -n "$name" ]; do
+            [[ -z "$name" || "$name" =~ ^# ]] && continue
+            
+            echo "=========================================="
+            echo "🚀 正在全自动同步源: [$name]"
+            echo "🔗 链接: $url"
+            echo "=========================================="
+            
+            # 1. 清理该源旧的文件目录
+            rm -rf "buckets/$name"
+            mkdir -p "buckets/$name"
+            
+            # 2. 注入 Token 克隆到临时目录（兼容大小写问题）
+            # 将链接中的 github.com 替换为带有通行证的验证链接
+            auth_url=$(echo "$url" | sed "s|github.com|x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com|g")
+            
+            if git clone --depth=1 "$auth_url" "temp_$name"; then
+              # 3. 搬运所有的 json 配置文件
+              if [ -d "temp_$name/bucket" ]; then
+                cp -r temp_$name/bucket/* "buckets/$name/" 2>/dev/null || true
+              else
+                cp -r temp_$name/* "buckets/$name/" 2>/dev/null || true
+              fi
+              # 清理临时克隆包
+              rm -rf "temp_$name"
+              echo "✅ [$name] 同步成功！"
+            else
+              echo "❌ [$name] 克隆失败，请检查 sources.txt 中的链接是否正确。"
+            fi
+            
+          done < sources.txt
 
       - name: Commit and Push to Your Repo
         run: |
@@ -51,6 +66,4 @@ jobs:
           git config --local user.name "GitHub Action"
           git add buckets/
           git commit -m "Automated Sync: $(date +'%Y-%m-%d %H:%M')" || exit 0
-          
-          # 🌟 关键修正 2：绝不使用模糊的 git push，而是强行带上临时通行证，精准推送到 main 分支
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
