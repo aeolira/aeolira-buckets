@@ -1,0 +1,52 @@
+{
+    "version": "12.1.557",
+    "homepage": "https://www.git-tower.com",
+    "description": "An easy to use GUI client for Git with powerful features.",
+    "license": {
+        "identifier": "Shareware",
+        "url": "https://www.git-tower.com/legal/eula/windows"
+    },
+    "suggest": {
+        ".NET Desktop Runtime 8.0": "versions/windowsdesktop-runtime-8.0"
+    },
+    "architecture": {
+        "64bit": {
+            "url": "https://www.git-tower.com/apps/tower3-win/557-ca9adea2/Tower-12.1.557.exe#/dl.7z",
+            "hash": "sha1:d05ecd0ccbc24f3c3712285efe8736cda9b56649"
+        },
+        "arm64": {
+            "url": "https://www.git-tower.com/apps/tower3-win/557-ca9adea2/Tower_arm64-12.1.557.exe#/dl.7z",
+            "hash": "sha1:1cd82fc51acd074826df3c81323bef25fbca0e77"
+        }
+    },
+    "extract_dir": "lib\\native",
+    "bin": "Tower.exe",
+    "shortcuts": [
+        [
+            "Tower.exe",
+            "Git Tower"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.git-tower.com/release-notes/windows",
+        "regex": "/(?<release>[\\da-f-]+)/Tower-([\\d.]+)\\.exe"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://www.git-tower.com/apps/tower3-win/$matchRelease/Tower-$version.exe#/dl.7z",
+                "hash": {
+                    "url": "https://www.git-tower.com/release-notes/windows",
+                    "regex": "$sha1\">\\s*Copy SHA1 checksum \\(x64\\)"
+                }
+            },
+            "arm64": {
+                "url": "https://www.git-tower.com/apps/tower3-win/$matchRelease/Tower_arm64-$version.exe#/dl.7z",
+                "hash": {
+                    "url": "https://www.git-tower.com/release-notes/windows",
+                    "regex": "$sha1\">\\s*Copy SHA1 checksum \\(ARM64\\)"
+                }
+            }
+        }
+    }
+}

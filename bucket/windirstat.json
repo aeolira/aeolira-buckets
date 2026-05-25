@@ -1,0 +1,35 @@
+{
+    "version": "2.6.1",
+    "description": "A disk usage statistics viewer and cleanup tool.",
+    "homepage": "https://windirstat.net",
+    "license": "GPL-2.0-only",
+    "url": "https://github.com/windirstat/windirstat/releases/download/release%2Fv2.6.1/WinDirStat.7z",
+    "hash": "14b6f19c3026e36418345fe78f70485e40e5099159f428cab732b69ceb509576",
+    "architecture": {
+        "64bit": {
+            "extract_dir": "x64"
+        },
+        "32bit": {
+            "extract_dir": "x86"
+        },
+        "arm64": {
+            "extract_dir": "arm64"
+        }
+    },
+    "shortcuts": [
+        [
+            "WinDirStat.exe",
+            "WinDirStat"
+        ]
+    ],
+    "checkver": {
+        "url": "https://github.com/windirstat/windirstat/releases",
+        "regex": "release/v([\\d.]+)"
+    },
+    "autoupdate": {
+        "url": "https://github.com/windirstat/windirstat/releases/download/release%2Fv$version/WinDirStat.7z",
+        "hash": {
+            "url": "$baseurl/WinDirStat-Hashes.txt"
+        }
+    }
+}
