@@ -1,3 +1,3 @@
-extras|https://github.com/ScoopInstaller/Extra.git
+extras|https://github.com/ScoopInstaller/Extras.git
 versions|https://github.com/ScoopInstaller/Versions.git
 dorado|https://github.com/chawyehsu/dorado.git
