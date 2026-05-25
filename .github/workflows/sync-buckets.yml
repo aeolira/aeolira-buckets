@@ -1,0 +1,53 @@
+name: Sync External Buckets
+
+on:
+  push:
+    paths:
+      - 'buckets.txt'             # 🌟 只有当你修改了花名册时才触发 push 运行
+  schedule:
+    - cron: '0 0 * * *'           # 每天北京时间早上 8 点准时自动同步
+  workflow_dispatch:              # 开启手动触发开关
+
+env:
+  FORCE_JUST_USE_NODE24: true
+
+permissions: write-all
+
+jobs:
+  sync_buckets:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Your Repo
+        uses: actions/checkout@v4
+
+      - name: Parse and Sync From buckets.txt
+        run: |
+          mkdir -p buckets
+          while IFS='|' read -r name url || [ -n "$name" ]; do
+            [[ -z "$name" || "$name" =~ ^# ]] && continue
+            echo "🚀 Syncing: [$name] from $url"
+            rm -rf "buckets/$name"
+            mkdir -p "buckets/$name"
+            
+            auth_url=$(echo "$url" | sed "s|github.com|x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com|g")
+            
+            if git clone --depth=1 "$auth_url" "temp_$name" 2>/dev/null; then
+              if [ -d "temp_$name/bucket" ]; then
+                cp -r temp_$name/bucket/* "buckets/$name/" 2>/dev/null || true
+              else
+                cp -r temp_$name/* "buckets/$name/" 2>/dev/null || true
+              fi
+              rm -rf "temp_$name"
+              echo "✅ [$name] Success"
+            else
+              echo "❌ [$name] Failed"
+            fi
+          done < buckets.txt
+
+      - name: Commit and Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add buckets/
+          git commit -m "Automated Buckets Sync: $(date +'%Y-%m-%d %H:%M')" || exit 0
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
