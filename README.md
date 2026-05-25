@@ -42,7 +42,7 @@ irm [https://get.scoop.sh](https://get.scoop.sh) | iex
 
 *验证安装：输入 `scoop -v`，若看到版本号，说明成功扎根在你的自定义目录！*
 
----
+
 
 ## 🔗 第二部分：绑定仓库
 
@@ -60,8 +60,6 @@ scoop update
 scoop bucket list
 
 ```
-
----
 
 ## 🧪 第三部分：自建软件专属加工厂（核心工作流）
 
