@@ -1,0 +1,46 @@
+name: Aggregate and Sync All Buckets
+
+on:
+  push:
+    branches: [ main, master ]
+  schedule:
+    - cron: '0 0 * * *' # 每天北京时间早上 8 点准时自动同步聚合
+  workflow_dispatch: # 🌟 开启手动触发开关，这样你就能在网页上点按钮运行它了
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Your Repo
+        uses: actions/checkout@v4
+
+      - name: Clear old files
+        run: |
+          mkdir -p buckets/extras buckets/versions buckets/dorado
+          rm -rf buckets/extras/* buckets/versions/* buckets/dorado/*
+
+      - name: Sync Scoop-Extras
+        run: |
+          git clone --depth=1 https://github.com/ScoopInstaller/Extra.git temp_extras
+          cp -r temp_extras/bucket/* buckets/extras/ 2>/dev/null || cp -r temp_extras/* buckets/extras/
+          rm -rf temp_extras
+
+      - name: Sync Scoop-Versions
+        run: |
+          git clone --depth=1 https://github.com/ScoopInstaller/Versions.git temp_versions
+          cp -r temp_versions/bucket/* buckets/versions/ 2>/dev/null || cp -r temp_versions/* buckets/versions/
+          rm -rf temp_versions
+
+      - name: Sync Dorado
+        run: |
+          git clone --depth=1 https://github.com/chawyehsu/dorado.git temp_dorado
+          cp -r temp_dorado/bucket/* buckets/dorado/ 2>/dev/null || cp -r temp_dorado/* buckets/dorado/
+          rm -rf temp_dorado
+
+      - name: Commit and Push to Your Repo
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add buckets/
+          git commit -m "Automated Sync: $(date +'%Y-%m-%d %H:%M')" || exit 0
+          git push
