@@ -3,7 +3,7 @@ name: Sync External Buckets
 on:
   push:
     paths:
-      - 'buckets.txt'             # 🌟 只有当你修改了花名册时才触发 push 运行
+      - 'buckets.txt'             # 只有当你修改了外部花名册时才触发
   schedule:
     - cron: '0 0 * * *'           # 每天北京时间早上 8 点准时自动同步
   workflow_dispatch:              # 开启手动触发开关
@@ -22,25 +22,26 @@ jobs:
 
       - name: Parse and Sync From buckets.txt
         run: |
-          mkdir -p buckets
+          # 🌟 建立官方标准的单数 bucket 文件夹
+          mkdir -p bucket
+          
           while IFS='|' read -r name url || [ -n "$name" ]; do
             [[ -z "$name" || "$name" =~ ^# ]] && continue
             echo "🚀 Syncing: [$name] from $url"
-            rm -rf "buckets/$name"
-            mkdir -p "buckets/$name"
             
             auth_url=$(echo "$url" | sed "s|github.com|x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com|g")
             
             if git clone --depth=1 "$auth_url" "temp_$name" 2>/dev/null; then
+              # 🌟 关键：不管对方把 JSON 藏在哪个子目录，统统强行捞出来平铺到根目录的 bucket/ 中
               if [ -d "temp_$name/bucket" ]; then
-                cp -r temp_$name/bucket/* "buckets/$name/" 2>/dev/null || true
+                cp -r temp_$name/bucket/*.json bucket/ 2>/dev/null || true
               else
-                cp -r temp_$name/* "buckets/$name/" 2>/dev/null || true
+                cp -r temp_$name/*.json bucket/ 2>/dev/null || true
               fi
               rm -rf "temp_$name"
-              echo "✅ [$name] Success"
+              echo "✅ [$name] 同步成功！"
             else
-              echo "❌ [$name] Failed"
+              echo "❌ [$name] 克隆失败。"
             fi
           done < buckets.txt
 
@@ -48,6 +49,9 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add buckets/
+          
+          # 🌟 统一追踪标准的 bucket 文件夹
+          git add bucket/
+          
           git commit -m "Automated Buckets Sync: $(date +'%Y-%m-%d %H:%M')" || exit 0
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
