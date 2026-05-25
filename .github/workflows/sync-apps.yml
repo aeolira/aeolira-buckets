@@ -1,0 +1,48 @@
+name: Auto Update Custom Apps
+
+on:
+  push:
+    paths:
+      - 'apps/**'                 # 🌟 只有当你或者 AI 新增/修改了 apps 文件夹里的 JSON 时才触发
+  schedule:
+    - cron: '0 */4 * * *'         # 每 4 小时自动巡检一次
+  workflow_dispatch:              # 支持随时手动点按钮触发
+
+permissions: write-all
+
+jobs:
+  update_apps:
+    runs-on: windows-latest       # 运行 Scoop 的 checkver 引擎必须用 Windows 环境
+    steps:
+      - name: Checkout Your Repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Run Scoop Checkver and Update
+        shell: pwsh
+        run: |
+          # 1. 临时拉取 Scoop 核心用来调用底层的 checkver 引擎
+          git clone --depth=1 https://github.com/ScoopInstaller/Scoop.git temp_scoop
+          
+          # 2. 全自动遍历 apps/ 目录下所有的 JSON 文件，挨个检查更新
+          if (Test-Path "apps") {
+              Get-ChildItem "apps\*.json" | ForEach-Object {
+                  echo "=========================================="
+                  echo "🔍 正在检查自建软件: [$($_.BaseName)]"
+                  echo "=========================================="
+                  powershell .\temp_scoop\bin\checkver.ps1 -Update -Path $_.FullName
+              }
+          }
+          
+          # 清理临时核心包
+          rm -rf temp_scoop
+
+      - name: Commit and Push Changes
+        shell: bash
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add apps/
+          git commit -m "Apps Auto-Update: $(date +'%Y-%m-%d %H:%M')" || exit 0
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:main
