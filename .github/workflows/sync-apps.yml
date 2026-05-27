@@ -42,12 +42,15 @@ jobs:
                   echo "=========================================="
                   echo "🔍 正在检查软件版本: [$($_.BaseName)]"
                   echo "=========================================="
-                  powershell .\temp_scoop\bin\checkver.ps1 -Update -Path $_.FullName
+                  
+                  # 🛠【修正 1】: 同时传入 -App (具体文件路径) 和 -Dir (所在的 bucket 目录)
+                  # 显式告诉 checkver 它的工作目录，并使用当前的 pwsh 执行（不用切换回旧版 powershell）
+                  pwsh .\temp_scoop\bin\checkver.ps1 -Update -App $_.FullName -Dir .\bucket
               }
           }
           
-          # 清理临时核心包
-          rm -rf temp_scoop
+          # 🛠【修正 2】: 使用 Windows 兼容的语法安全删除临时文件夹，防止爆错
+          if (Test-Path "temp_scoop") { Remove-Item -Recurse -Force temp_scoop }
 
       - name: 💾 Commit and Push Changes
         shell: bash
