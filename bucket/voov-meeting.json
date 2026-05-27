@@ -1,0 +1,30 @@
+{
+    "version": "3.32.21.510",
+    "description": "VooV Meeting is the international version of Tencent Meeting, providing secure, reliable, and high-quality cloud-based video conferencing.",
+    "homepage": "https://voovmeeting.com/",
+    "license": "Proprietary",
+    "architecture": {
+        "64bit": {
+            "url": "https://updatecdn.meeting.qq.com/cos/134ffa8eeb2301e74833be7feffa2058/VooVMeeting_1410000197_3.32.21.510_x86_64.publish.exe",
+            "hash": "134ffa8eeb2301e74833be7feffa2058"
+        }
+    },
+    "installer": {
+        "args": [
+            "/S",
+            "/D=$dir"
+        ]
+    },
+    "uninstaller": {
+        "args": [
+            "/S"
+        ]
+    },
+    "bin": "VooVMeeting.exe",
+    "shortcuts": [
+        [
+            "VooVMeeting.exe",
+            "VooV Meeting"
+        ]
+    ]
+}
