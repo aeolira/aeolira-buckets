@@ -1,17 +1,17 @@
 {
-    "version": "0.25.3",
+    "version": "0.25.4",
     "description": "A fast Rust based tool to serialize text-based files in a repository or directory for LLM consumption",
     "homepage": "https://github.com/bodo-run/yek",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/bodo-run/yek/releases/download/v0.25.3/yek-x86_64-pc-windows-msvc.zip",
-            "hash": "b22eef5a0418adf2f0274f7f8470489752a982c493815cdf1a1e6225c7910b3b",
+            "url": "https://github.com/bodo-run/yek/releases/download/v0.25.4/yek-x86_64-pc-windows-msvc.zip",
+            "hash": "51b8aa0688569bb43b2e1a437bd4dbede5525ed029976fe462f5a1fa67396c37",
             "extract_dir": "yek-x86_64-pc-windows-msvc"
         },
         "arm64": {
-            "url": "https://github.com/bodo-run/yek/releases/download/v0.25.3/yek-aarch64-pc-windows-msvc.zip",
-            "hash": "772261f5db59d62bcbed80ceaa1840f28294756736326fca04d64bcb75d002fa",
+            "url": "https://github.com/bodo-run/yek/releases/download/v0.25.4/yek-aarch64-pc-windows-msvc.zip",
+            "hash": "d2ae3d2cd5c8c2553cd91fce5d5302e3542340b5bfa24cf02b8070749bee980c",
             "extract_dir": "yek-aarch64-pc-windows-msvc"
         }
     },
