@@ -10,11 +10,11 @@
     "architecture": {
         "64bit": {
             "url": "https://www.high-logic.com/FontCreatorSetup-x64.exe",
-            "hash": "550bdf70ffd0c8d24945f9172d39a392ab4a33f211fbb4f344b8800d5e5b133a"
+            "hash": "5d316594ab814c99b7642da2fe0d9c4ea53425bd0bf3e5efa65e63b4320122a4"
         },
         "32bit": {
             "url": "https://www.high-logic.com/FontCreatorSetup.exe",
-            "hash": "550bdf70ffd0c8d24945f9172d39a392ab4a33f211fbb4f344b8800d5e5b133a"
+            "hash": "5d316594ab814c99b7642da2fe0d9c4ea53425bd0bf3e5efa65e63b4320122a4"
         }
     },
     "shortcuts": [
