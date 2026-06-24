@@ -1,12 +1,12 @@
 {
-    "version": "1313-4.5.2",
+    "version": "1432-4.5.4",
     "homepage": "https://processing.org/",
     "description": "A flexible software sketchbook and a language for learning how to code.",
     "license": "GPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/processing/processing4/releases/download/processing-1313-4.5.2/processing-4.5.2-windows-x64-portable.zip",
-            "hash": "6175179da4132af9c46597b8482b38e97ec9d09f0c819a32d8c7397b6d008186"
+            "url": "https://github.com/processing/processing4/releases/download/processing-1432-4.5.4/processing-4.5.4-windows-x64-portable.zip",
+            "hash": "edf40958c177a69cba0aebacfaa13939534110a1959bf905f4b1eeb8ed396238"
         }
     },
     "extract_dir": "Processing",
