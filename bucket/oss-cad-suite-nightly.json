@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/YosysHQ/oss-cad-suite-build/releases/download/2026-06-26/oss-cad-suite-windows-x64-20260626.exe#/dl.7z",
-            "hash": "a26abe10f7eae9b59dbe86efd1ef25ab1aad97ffb7280d3cfbc551da4b063383"
+            "hash": "8b972fa8478d7ffb9edd86186a42a1faddd056d74482368b37d3cabf2dcc59f7"
         }
     },
     "extract_dir": "oss-cad-suite",
