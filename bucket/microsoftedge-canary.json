@@ -1,20 +1,20 @@
 {
     "homepage": "https://www.microsoft.com/en-us/edge",
     "description": "The chromium based Microsoft Edge browser (Canary Channel)",
-    "version": "152.0.4142.0",
+    "version": "152.0.4143.0",
     "license": "Freeware",
     "architecture": {
         "64bit": {
-            "url": "https://dorado-api.deno.dev/edge?arch=64&channel=canary&version=152.0.4142.0&dl#/MicrosoftEdge-152.0.4142.0-x64.7z",
-            "hash": "a6b7c5641f35afc96dbfbd695d2813b9af502a144e602992e20c214392b0730a"
+            "url": "https://dorado-api.deno.dev/edge?arch=64&channel=canary&version=152.0.4143.0&dl#/MicrosoftEdge-152.0.4143.0-x64.7z",
+            "hash": "9571e0ea58272dd750deff05cf731db9f0d6309c4fb9a3dedcfa48a0e161ee0b"
         },
         "32bit": {
-            "url": "https://dorado-api.deno.dev/edge?arch=86&channel=canary&version=152.0.4142.0&dl#/MicrosoftEdge-152.0.4142.0-x86.7z",
-            "hash": "2a1906da37fabd6204391232d58edda75cb8aad249273b13739cc070cb6edc45"
+            "url": "https://dorado-api.deno.dev/edge?arch=86&channel=canary&version=152.0.4143.0&dl#/MicrosoftEdge-152.0.4143.0-x86.7z",
+            "hash": "efdfe802027894f909ba254860b35b832b7e5f719d6dd1016523095f7b42ae49"
         },
         "arm64": {
-            "url": "https://dorado-api.deno.dev/edge?arch=arm64&channel=canary&version=152.0.4142.0&dl#/MicrosoftEdge-152.0.4142.0-arm64.7z",
-            "hash": "a951e1bd90ecc88cb7ce049e7ef8e9eb2909ae45e2262db8a29c51363967f54a"
+            "url": "https://dorado-api.deno.dev/edge?arch=arm64&channel=canary&version=152.0.4143.0&dl#/MicrosoftEdge-152.0.4143.0-arm64.7z",
+            "hash": "bd7631d23ffd6098839930d0144658b715f5be6c11e90638778098a416b7e97f"
         }
     },
     "installer": {
