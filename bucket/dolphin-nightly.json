@@ -1,12 +1,12 @@
 {
-    "version": "8024",
+    "version": "8030",
     "homepage": "https://apps.kde.org/dolphin/",
     "description": "A file manager developed by KDE that lets you navigate and browse the contents of your hard drives, USB sticks, SD cards, and more.",
     "license": "GPL-2.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.kde.org/ci-builds/system/dolphin/master/windows/dolphin-master-8024-windows-cl-msvc2022-x86_64.7z",
-            "hash": "424716546c87523e3a958b63df704bac0a0e16b9d9dc285d84931e53b5c959f5"
+            "url": "https://cdn.kde.org/ci-builds/system/dolphin/master/windows/dolphin-master-8030-windows-cl-msvc2022-x86_64.7z",
+            "hash": "d71014ea716c9426ef692a77e92cde8177f44b83b1d2c4ff18364ea2819a48ce"
         }
     },
     "bin": "bin\\dolphin.exe",
