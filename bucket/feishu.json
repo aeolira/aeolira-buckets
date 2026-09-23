@@ -8,7 +8,7 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/2da5213ex/Feishu-win32_x64-8.1.17-signed.exe#/feishu-8.1.17.7z",
+            "url": "https://sf3-cn.feishucdn.com/obj/ee-appcenter/3620a11d/Feishu-win32_x64-8.1.17-signed.exe#/feishu-8.1.17.7z",
             "hash": "md5:48e65bd7b195f21c96b132023c9344f2"
         },
         "32bit": {
