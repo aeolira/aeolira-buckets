@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://cdn.kde.org/ci-builds/education/labplot/master/windows/labplot-master-11342-windows-cl-msvc2022-x86_64.7z",
-            "hash": "2acafe5c9e2e55adcfca94f06c7e7ebf5db8dea62c066ffb192d39c316a3c7a7"
+            "hash": "8253def93e34d951714c2075aeeb1895827a7f76786e38c0b812e49205d689d5"
         }
     },
     "shortcuts": [
