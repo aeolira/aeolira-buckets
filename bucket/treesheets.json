@@ -1,18 +1,18 @@
 {
-    "version": "3492",
+    "version": "3503",
     "description": "A free form data organizer and a replacement for spreadsheets, mind mappers, outliners, PIMs, text editors and small databases.",
     "homepage": "https://strlen.com/treesheets",
     "license": "ZLIB",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/aardappel/treesheets/releases/download/3492/TreeSheets-3492-winx64.zip",
-            "hash": "0d9a76bfed835aeb591eb43c153d428f2b99f35a55ecc57056f06bc1c10cf163",
-            "extract_dir": "TreeSheets-3492-winx64"
+            "url": "https://github.com/aardappel/treesheets/releases/download/3503/TreeSheets-3503-winx64.zip",
+            "hash": "45e35180f181169cf2cdc2618fb13f1f0dd24e4071c5514b03a8af7c6034d942",
+            "extract_dir": "TreeSheets-3503-winx64"
         },
         "arm64": {
-            "url": "https://github.com/aardappel/treesheets/releases/download/3492/TreeSheets-3492-winarm64.zip",
-            "hash": "fb4c24e5811311a954bc3bd61b98c2bb52fb9ef3ec67410d4836f65604712780",
-            "extract_dir": "TreeSheets-3492-winarm64"
+            "url": "https://github.com/aardappel/treesheets/releases/download/3503/TreeSheets-3503-winarm64.zip",
+            "hash": "b3f7786211ad441b7fcce4aa636a3cd8d18e3a4b18fae27c6db01aab0d7a57be",
+            "extract_dir": "TreeSheets-3503-winarm64"
         }
     },
     "pre_install": [
