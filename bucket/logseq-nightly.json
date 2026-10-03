@@ -6,7 +6,7 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/logseq/logseq/releases/download/nightly/Logseq-win-x64-2.0.2-alpha+nightly.20261002.zip",
-            "hash": "8e279655ab86a67b671b06b443d9391b6260844e879508b6cf4019c15d19b64d"
+            "hash": "fdf389f8628c4b3fb12a9a0ef2b976f5f662363836a93ab73a43f8763497d20a"
         }
     },
     "shortcuts": [
