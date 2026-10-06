@@ -1,24 +1,36 @@
 {
-    "version": "0.1.1074",
+    "version": "0.1.1077",
     "description": "Unified model, provider, and gateway manager for AI coding agents.",
     "homepage": "https://usemagpie.ai",
     "license": "MIT",
+    "notes": [
+        "Scoop persists data since version 0.1.1067. You may need to move data by yourself.",
+        "Before: '$env:USERPROFILE\\.config\\magpie'",
+        "After : '$persist_dir\\data'"
+    ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.1074/magpie-windows-amd64.exe#/magpie.exe",
-            "hash": "c38f4ee0a11ddb11ba1fa45bb32c93113010c0997eb5681e04216b84a25b36ee"
+            "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.1077/magpie-windows-amd64.exe#/magpie.exe",
+            "hash": "879137942939aae292a770d6842b363d33cff8e8d68187340bfe1aa51ec13157"
         },
         "arm64": {
-            "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.1074/magpie-windows-arm64.exe#/magpie.exe",
-            "hash": "f5dff2e8b7262a6de78fd8178523411187bbd8a86af6c275c83b5b4203dbb444"
+            "url": "https://github.com/yetone/magpie-releases/releases/download/v0.1.1077/magpie-windows-arm64.exe#/magpie.exe",
+            "hash": "3cd67440e212c6706605a6bfe732d27734f36ee2d7cd17a771ee4ec0c651189e"
         }
     },
+    "pre_install": [
+        "if (-not (Test-Path -LiteralPath \"$persist_dir\\data\\settings.json\" -PathType Leaf)) {",
+        "    ensure \"$dir\\data\" | Out-Null",
+        "    @{ noAutoUpdate = $true } | ConvertTo-Json | Set-Content -LiteralPath \"$dir\\data\\settings.json\" -Force -Encoding ASCII",
+        "}"
+    ],
     "shortcuts": [
         [
             "magpie.exe",
             "Magpie"
         ]
     ],
+    "persist": "data",
     "checkver": {
         "github": "https://github.com/yetone/magpie-releases"
     },
