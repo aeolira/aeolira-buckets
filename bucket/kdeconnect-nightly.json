@@ -1,12 +1,12 @@
 {
-    "version": "6713",
+    "version": "6717",
     "description": "Communications and data transfer between devices over local networks",
     "homepage": "https://apps.kde.org/kdeconnect",
     "license": "LGPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/master/windows/kdeconnect-kde-master-6713-windows-cl-msvc2022-x86_64.7z",
-            "hash": "9c8bf644141a01b71d2fd8fcf0e793caeb096ad558829f46d1ba9e7f1f05419f"
+            "url": "https://cdn.kde.org/ci-builds/network/kdeconnect-kde/master/windows/kdeconnect-kde-master-6717-windows-cl-msvc2022-x86_64.7z",
+            "hash": "70e30a5a73225d984a22c9d7f669499f9a27a6fa7b8a4ba327128337cf80577b"
         }
     },
     "bin": [
