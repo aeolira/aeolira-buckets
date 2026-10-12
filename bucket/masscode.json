@@ -1,12 +1,12 @@
 {
-    "version": "6.2.0",
+    "version": "6.2.1",
     "description": "A free and open source code snippets manager for developers",
     "homepage": "https://github.com/massCodeIO/massCode",
     "license": "AGPL-3.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/massCodeIO/massCode/releases/download/v6.2.0/massCode-6.2.0-x64.exe#/dl.7z",
-            "hash": "5ecb76ff4e46ed234df6382f04020828bb158fe0f11366595254836a164736ac"
+            "url": "https://github.com/massCodeIO/massCode/releases/download/v6.2.1/massCode-6.2.1-x64.exe#/dl.7z",
+            "hash": "0dbd01a34f3d259061d649d585f9cf7bee85c3cc0acb42e57f1362b5cac2abb0"
         }
     },
     "installer": {
