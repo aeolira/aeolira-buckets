@@ -1,16 +1,16 @@
 {
-    "version": "0.0.0-dev-21034",
+    "version": "0.0.0-dev-21020",
     "description": "The open source AI coding agent. (v2)",
     "homepage": "https://opencode.ai/v2",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://registry.npmjs.org/@opencode/cli-windows-x64/-/cli-windows-x64-0.0.0-dev-21034.tgz",
-            "hash": "sha512:184aa01a4ce3ea78b8738c52aa50b92827009b28efc518bbe67b89f2ac8228a595aa153097a67468ca5b00cd53d5311439ff329dba00b65ed56c01608af61789"
+            "url": "https://registry.npmjs.org/@opencode/cli-windows-x64/-/cli-windows-x64-0.0.0-dev-21020.tgz",
+            "hash": "sha512:86b16fdbce8292617e9a951bcd2a650fb1275e0d8f58af7ec0666ced9c47192307bce849db02e8364aa436fba601c1ee3636ad983553ff05b09b63c7241bddd6"
         },
         "arm64": {
-            "url": "https://registry.npmjs.org/@opencode/cli-windows-arm64/-/cli-windows-arm64-0.0.0-dev-21034.tgz",
-            "hash": "sha512:82ddff5fb7bef9ae893abecc58ba25c796763d6193541a588929671273058e0264b142d5cdc7d0bf4bb9c89393ff91fb32689ec714ad6ebd0ba21a5f4eb8cac3"
+            "url": "https://registry.npmjs.org/@opencode/cli-windows-arm64/-/cli-windows-arm64-0.0.0-dev-21020.tgz",
+            "hash": "sha512:6aa9feaf4cc1beb8a34dd5e4f8778caf1862f427ee99071f4fe93afdeb73aef9b2ae271f54a9c42004625a4a92bd3ae51f4ca290ef989405c3f5e00619caea6c"
         }
     },
     "extract_dir": "package\\bin",
