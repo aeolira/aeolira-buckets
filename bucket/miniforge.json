@@ -1,12 +1,12 @@
 {
-    "version": "26.3.2-3",
+    "version": "26.7.2-1",
     "homepage": "https://github.com/conda-forge/miniforge",
     "description": "A minimal conda distribution specific to conda-forge.",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/conda-forge/miniforge/releases/download/26.3.2-3/Miniforge3-26.3.2-3-Windows-x86_64.exe",
-            "hash": "14a8635465b5190537ddad6286746ffebbc55a1ed2a7bb14a506595fe3191e1e"
+            "url": "https://github.com/conda-forge/miniforge/releases/download/26.7.2-1/Miniforge3-26.7.2-1-Windows-x86_64.exe",
+            "hash": "cda54a8d6d1d956a9ff6d497afc5abd9b0a655897e129a0e4d92a18966fd87e5"
         }
     },
     "installer": {
