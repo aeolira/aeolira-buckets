@@ -1,16 +1,16 @@
 {
-    "version": "1792983304",
+    "version": "1792965121",
     "description": "G-code generator for 3D printers (Bambu, Prusa, Voron, VzBot, RatRig, Creality, etc.)",
     "homepage": "https://github.com/OrcaSlicer/OrcaSlicer",
     "license": "AGPL-3.0-or-later",
     "architecture": {
         "64bit": {
             "url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/nightly-builds/OrcaSlicer_Windows_x64_nightly_portable.zip",
-            "hash": "dd8c2d83e3dd792530f806189cfb7f8043876cd3ef1fecc0e25947d00cba9859"
+            "hash": "3e7be59889d5f3beaba23eccacc30db93920b3e4d5fde9bd43d257d7b4c5cbc5"
         },
         "arm64": {
             "url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/nightly-builds/OrcaSlicer_Windows_arm64_nightly_portable.zip",
-            "hash": "fd3bf325de1d5e3585ffe3f2a30b220df59a011825e1e08d1b65e087d4956e76"
+            "hash": "1378d2d1211af14a5bea2b91948a41f8f660c0f84cb22d5217df807d27bd28fb"
         }
     },
     "extract_dir": "OrcaSlicer",
