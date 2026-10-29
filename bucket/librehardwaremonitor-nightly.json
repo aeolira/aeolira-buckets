@@ -1,12 +1,12 @@
 {
-    "version": "40712840528",
+    "version": "40851298032",
     "description": "Libre Hardware Monitor is free software that can monitor the temperature sensors, fan speeds, voltages, load and clock speeds of your computer (nightly version).",
     "homepage": "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor",
     "license": "MPL-2.0",
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/LibreHardwareMonitor/LibreHardwareMonitor/actions/runs/40712840528/LibreHardwareMonitor.Windows.Forms.zip",
-            "hash": "93589e6939a6586958f9a5b301916bdbbac936e28d5bcba5ff970966eb94a128"
+            "url": "https://nightly.link/LibreHardwareMonitor/LibreHardwareMonitor/actions/runs/40851298032/LibreHardwareMonitor.Windows.Forms.zip",
+            "hash": "d36ae7d92787efc181bd0dcbcac2909c6df8079b66ded6f7117521894dde3d3a"
         }
     },
     "pre_install": [
