@@ -13,11 +13,11 @@
     "architecture": {
         "64bit": {
             "url": "https://github.com/DPanel-dev/gui/releases/download/v1.11.2/dpanel-desktop-pe-amd64-portable.zip",
-            "hash": "75ab9a10b15148614acbfdc3b65ed7400b985c7f71898f9183cab93de624c4b0"
+            "hash": "6ab145798407647875bbb62a8679f7138fe99a36932a512b3611652407e25440"
         },
         "arm64": {
             "url": "https://github.com/DPanel-dev/gui/releases/download/v1.11.2/dpanel-desktop-pe-arm64-portable.zip",
-            "hash": "5a5cc7d569c71142e45d6d9c5e0d40e24cca814a667473b2054875cb0298972a"
+            "hash": "c0dec25564fa95439377ff1c217303b268019b8db0cd03b23196a6bf2080ad24"
         }
     },
     "extract_dir": "dpanel-desktop",
