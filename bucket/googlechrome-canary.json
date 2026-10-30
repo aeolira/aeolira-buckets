@@ -12,8 +12,8 @@
             "hash": "923d5bdb7daf096235ab423bf85746a1b813a0937ee5393f33e134c6fa95092a"
         },
         "32bit": {
-            "url": "https://dl.google.com/release2/chrome/ac5xsiqbda6qcxq3bep5u6knbxvq_159.0.8131.1/159.0.8131.1_chrome_installer_uncompressed.exe#/dl.7z",
-            "hash": "908eea013825d9adf52f8baf311305cf7401a2f19bdaa9ed902f064b55865d11"
+            "url": "https://dl.google.com/release2/chrome/ac2eyuaa4rj4mnw5qwn5q4va2y5a_159.0.8131.0/159.0.8131.0_chrome_installer_uncompressed.exe#/dl.7z",
+            "hash": "1a438c0e226ea73b8a8ee7117b442aa81b84e8cb98883faa3048ef14826bd687"
         },
         "arm64": {
             "url": "https://dl.google.com/release2/chrome/gl43dqclouw2czolp2h2arhtka_159.0.8131.0/159.0.8131.0_chrome_installer_uncompressed.exe#/dl.7z",
