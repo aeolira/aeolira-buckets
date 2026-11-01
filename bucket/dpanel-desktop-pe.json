@@ -1,5 +1,5 @@
 {
-    "version": "1.11.1",
+    "version": "1.11.2-117",
     "description": "DPanel Pro Edition desktop app for managing Docker and Podman containers.",
     "homepage": "https://dpanel.cc/",
     "license": {
@@ -12,12 +12,12 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://github.com/DPanel-dev/gui/releases/download/v1.11.1/dpanel-desktop-pe-amd64-portable.zip",
-            "hash": "4b1e85c38581c53fa700d0dc3eab03b852946215279093941d02fa3b40a384aa"
+            "url": "https://github.com/DPanel-dev/gui/releases/download/v1.11.2-117/dpanel-desktop-pe-amd64-portable.zip",
+            "hash": "7859f52a9d44dac37906bc6cfb8f9d385df41c477db0c1137834c74db9505a02"
         },
         "arm64": {
-            "url": "https://github.com/DPanel-dev/gui/releases/download/v1.11.1/dpanel-desktop-pe-arm64-portable.zip",
-            "hash": "0999a951b363c9f5f472ac99428fd64f6cdc48a89d49f16d6ef7f481e2d1aedb"
+            "url": "https://github.com/DPanel-dev/gui/releases/download/v1.11.2-117/dpanel-desktop-pe-arm64-portable.zip",
+            "hash": "139acfa07ba50293f7614dac1fc62441a9887c1a8fb37d02b3893df60d8c2092"
         }
     },
     "extract_dir": "dpanel-desktop",
