@@ -10,7 +10,7 @@
     "architecture": {
         "64bit": {
             "url": "https://www.rescuetime.com/installers/RescueTimeInstaller_3.4.1.6.exe",
-            "hash": "30e61416246bc98e438d6a3762db1e813c7899c948aa907eed19c7df08ab978f"
+            "hash": "a40898768be23f27daeabb49702a02a8a32298d98463638e99c12c8ebef307b3"
         }
     },
     "innosetup": true,
