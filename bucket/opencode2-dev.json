@@ -1,16 +1,16 @@
 {
-    "version": "0.0.0-dev-892",
+    "version": "0.0.0-dev-927",
     "description": "The open source AI coding agent. (v2)",
     "homepage": "https://opencode.ai/v2",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://registry.npmjs.org/@opencode/cli-windows-x64/-/cli-windows-x64-0.0.0-dev-892.tgz",
-            "hash": "sha512:1961b729b9639cd18ff8edbb6e4c7a4d256773d5aa58167cbe19a0cd4077c9d25a981b252d3129916eda0132ce05acc7a1cad4b109711fa2ddbdea03f3c5bef4"
+            "url": "https://registry.npmjs.org/@opencode/cli-windows-x64/-/cli-windows-x64-0.0.0-dev-927.tgz",
+            "hash": "sha512:b1366578862c9dfeb2096b56248ec2f03fcd47f7509f4c45659a6aafb32100d6fecc6afe80ec5559ec13f2975d8d67afd4d44c01cabf31b9265a1dcc3b68e410"
         },
         "arm64": {
-            "url": "https://registry.npmjs.org/@opencode/cli-windows-arm64/-/cli-windows-arm64-0.0.0-dev-892.tgz",
-            "hash": "sha512:54e257442bd05a2b824301f26a6f2a4c913a7e85aaceb534f9dc92be36e64ef2808c60b4d9ec4bf015a99c2d072f258ccac0827f901d1babd68c8b5c4cf23ce5"
+            "url": "https://registry.npmjs.org/@opencode/cli-windows-arm64/-/cli-windows-arm64-0.0.0-dev-927.tgz",
+            "hash": "sha512:9368dcbce108bfdad2a4de8da2b53b5e588aed32683825af75f0fda6819d2b3a90488f3d8bda7d6519893f5754e6f7c00d87caa8f7ca0cd1cf2bb409e1f27fe4"
         }
     },
     "extract_dir": "package\\bin",
