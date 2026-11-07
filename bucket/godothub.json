@@ -1,12 +1,12 @@
 {
-    "version": "1.5.5",
+    "version": "1.5.6",
     "description": "The Ultimate Project Manager for Godot Engine.",
     "homepage": "https://ryko.is-a.dev/godothub",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/RykoTheDev/GodotHub/releases/download/v1.5.5/GodotHub-1.5.5-windows-x64-portable.exe#/GodotHub.exe",
-            "hash": "5b468e3ebec09ca36b08fdf8f506d9c4e1259022f2e9b56d464171d24268f696"
+            "url": "https://github.com/RykoTheDev/GodotHub/releases/download/v1.5.6/GodotHub-1.5.6-windows-x64-portable.exe#/GodotHub.exe",
+            "hash": "cf2f57efccdb4ec84efbda85fd725372c45fa06a391142f44a064432b94a96d3"
         }
     },
     "shortcuts": [
