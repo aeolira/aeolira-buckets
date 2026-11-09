@@ -1,17 +1,17 @@
 {
-    "version": "42237909907",
+    "version": "42616776869",
     "description": "JPEG XL image format (.jxl) encode/decode tools (nightly version).",
     "homepage": "https://jpeg.org/jpegxl",
     "license": "BSD-3-Clause",
     "architecture": {
         "64bit": {
-            "url": "https://nightly.link/libjxl/libjxl/actions/runs/42237909907/jxl-x64-windows-static.zip",
-            "hash": "a1c5ce0a20e6510fa4997b8efdeec917d3eae2325bfda89cf27d611636caae92",
+            "url": "https://nightly.link/libjxl/libjxl/actions/runs/42616776869/jxl-x64-windows-static.zip",
+            "hash": "0d7aaa028413b956aa52eba19aed101804a73dabad9d5c575b8ae67501741c33",
             "extract_dir": "x64-windows-static\\bin"
         },
         "32bit": {
-            "url": "https://nightly.link/libjxl/libjxl/actions/runs/42237909907/jxl-x86-windows-static.zip",
-            "hash": "b3c1a558b272286688768b3226b00447daf82a7a52548ad63d2b8a0108f1c915",
+            "url": "https://nightly.link/libjxl/libjxl/actions/runs/42616776869/jxl-x86-windows-static.zip",
+            "hash": "e11b7c225eaa6c6ff27c47fb924cb64c03d5904e8bb5e99ee109588803b3f83e",
             "extract_dir": "x86-windows-static\\bin"
         }
     },
