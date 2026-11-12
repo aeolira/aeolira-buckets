@@ -1,16 +1,16 @@
 {
-    "version": "2.5.3",
+    "version": "2.5.4",
     "description": "AI-native, GPU-accelerated terminal emulator for Windows",
     "homepage": "https://github.com/Kuddev/pebrel",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/Kuddev/pebrel/releases/download/v2.5.3/Pebrel-v2.5.3-windows-x64.zip",
-            "hash": "c6d7faf53defa32fc43e596d5b8a34963ef6241e95d858762bea450d5f127141"
+            "url": "https://github.com/Kuddev/pebrel/releases/download/v2.5.4/Pebrel-v2.5.4-windows-x64.zip",
+            "hash": "39153a6b8587ae8bed34455cc146317df9b58e4e1d868fb230177ce4cd7ce39a"
         },
         "arm64": {
-            "url": "https://github.com/Kuddev/pebrel/releases/download/v2.5.3/Pebrel-v2.5.3-windows-arm64.zip",
-            "hash": "a0eebce5bfd82b4e6832c5e6b235c1f6e3aa568143587718dbc9b4a7c0d9d91e"
+            "url": "https://github.com/Kuddev/pebrel/releases/download/v2.5.4/Pebrel-v2.5.4-windows-arm64.zip",
+            "hash": "9ad323aafedf387c9c397ec5a8cb916ce90573b4833783151651f47e565905ae"
         }
     },
     "env_set": {

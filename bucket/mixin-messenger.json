@@ -1,13 +1,13 @@
 {
-    "version": "6.6.0",
+    "version": "6.6.1",
     "description": "Mixin Messenger desktop app",
     "homepage": "https://mixin.one/messenger",
     "license": "GPL-3.0-only",
     "innosetup": true,
     "architecture": {
         "64bit": {
-            "url": "https://github.com/MixinNetwork/flutter-app/releases/download/v6.6.0/mixin_desktop_windows_setup_amd64.exe",
-            "hash": "4a4bc51f6f476280c03df81cc9ef5f1842d64e513db6334202dca52ea8b71e7e"
+            "url": "https://github.com/MixinNetwork/flutter-app/releases/download/v6.6.1/mixin_desktop_windows_setup_amd64.exe",
+            "hash": "b7519797f632785e7c170cfb4fcac8ecb48cbcb10524aed35801de573dc48e5f"
         }
     },
     "shortcuts": [
