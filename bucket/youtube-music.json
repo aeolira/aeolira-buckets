@@ -1,6 +1,6 @@
 {
     "##": "Deprecate this manifest after 2026-06-01.",
-    "version": "3.12.0",
+    "version": "3.12.1",
     "description": "Unofficial YouTube Music Desktop App bundled with custom plugins. (Deprecated, please use `extras/pear-desktop` instead)",
     "homepage": "https://github.com/pear-devs/pear-desktop",
     "license": "MIT",
@@ -8,8 +8,8 @@
         "`youtube-music` has been renamed to `pear-desktop`.",
         "This manifest is deprecated and scheduled for removal on 2026-06-01. Please use `extras/pear-desktop` instead."
     ],
-    "url": "https://github.com/pear-devs/pear-desktop/releases/download/v3.12.0/YouTube-Music-3.12.0.exe#/dl.7z",
-    "hash": "877841bdda4457d4f9d5c3d051c724c2aa363e15229bdf8b2dc955971b8cd24e",
+    "url": "https://github.com/pear-devs/pear-desktop/releases/download/v3.12.1/YouTube-Music-3.12.1.exe#/dl.7z",
+    "hash": "ddc87114ff31a7441fc1536e521a342eabcc7cd347ddfb720d899f1e030aa377",
     "architecture": {
         "64bit": {
             "pre_install": "Expand-7zipArchive \"$dir\\`$PLUGINSDIR\\app-64.7z\" \"$dir\" | Out-Null"
