@@ -1,5 +1,5 @@
 {
-    "version": "nRkdio",
+    "version": "atG3zM",
     "description": "GN is a meta-build system that generates build files for Ninja.",
     "homepage": "https://gn.googlesource.com/gn",
     "license": "BSD-3-Clause",
@@ -9,8 +9,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://chrome-infra-packages.appspot.com/dl/gn/gn/windows-amd64/+/nRkdio86wNkGoJBEvzV_2DBcvNreb-aN5PSBnqTeTOkC#/gn-windows-amd64.zip",
-            "hash": "9d191d8a8f3ac0d906a09044bf357fd8305cbcdade6fe68de4f4819ea4de4ce9"
+            "url": "https://chrome-infra-packages.appspot.com/dl/gn/gn/windows-amd64/+/atG3zM5uxQWPZRPsKS19JWbc98bsnV7xW_hDcGEB830C#/gn-windows-amd64.zip",
+            "hash": "6ad1b7ccce6ec5058f6513ec292d7d2566dcf7c6ec9d5ef15bf843706101f37d"
         }
     },
     "bin": "gn.exe",
