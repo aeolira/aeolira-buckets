@@ -12,12 +12,12 @@
             "hash": "233c772792f8657a5b1d3769bddd79dc8759087418a357669d7ca853e7f6d1fc"
         },
         "32bit": {
-            "url": "https://dl.google.com/release2/chrome/khn7oycefmqpvvb5klrtpkupnu_160.0.8170.0/160.0.8170.0_chrome_installer_uncompressed.exe#/dl.7z",
-            "hash": "886e061cdc9208d57f59251fa1a265ae460d4b0471aecc399aa53ba1ffa7535f"
+            "url": "https://dl.google.com/release2/chrome/ad77qlhycghcuy56kdewwqhq2koq_160.0.8169.0/160.0.8169.0_chrome_installer_uncompressed.exe#/dl.7z",
+            "hash": "38377d722bda7d509f7f3a6972658ebd12ddf89470fef1b5b6b1ab28819c6734"
         },
         "arm64": {
-            "url": "https://dl.google.com/release2/chrome/acfap7ort7sr76o2cxmatdw25t7q_160.0.8170.0/160.0.8170.0_chrome_installer_uncompressed.exe#/dl.7z",
-            "hash": "3716b56e27bb1d5377e28512f509df0866f4cb04bba6cff8fb21eb9446718546"
+            "url": "https://dl.google.com/release2/chrome/acm57qt6tbxe4n3geje25cuvo63q_160.0.8169.0/160.0.8169.0_chrome_installer_uncompressed.exe#/dl.7z",
+            "hash": "84aea9c2dfa55c481724d58e9f9ba68675d0a349b2f64196eb7f8cf9273a834d"
         }
     },
     "extract_dir": "Chrome-bin",
