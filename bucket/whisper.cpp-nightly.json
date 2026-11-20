@@ -1,5 +1,5 @@
 {
-    "version": "b5454",
+    "version": "b5907",
     "description": "High-performance inference of OpenAI's Whisper automatic speech recognition (ASR) model (nightly version).",
     "homepage": "https://github.com/ggml-org/whisper.cpp",
     "license": "MIT",
@@ -9,8 +9,8 @@
     ],
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-bin-x64.zip",
-            "hash": "6ba69e3482d7826214f90a6a9c84ca07782aec1e1d0c6a7c30c994fd5d816ccb",
+            "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5907/whisper-bin-x64.zip",
+            "hash": "ecca07b277d943e9b9f4712856a144b857271a6b333104e511e1988e80db582b",
             "bin": [
                 "whisper-bench.exe",
                 "whisper-cli.exe",
@@ -24,8 +24,8 @@
             ]
         },
         "32bit": {
-            "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-bin-Win32.zip",
-            "hash": "b6cb078ee5d4df0f9dcdb4f820210c59bd6534c84fdb13c35bc8a51d1233451f",
+            "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5907/whisper-bin-Win32.zip",
+            "hash": "6758a64559eaf8a83e74b50040a234fb9a690c6e97190c1576216c90bbd8f7ec",
             "bin": [
                 "whisper-bench.exe",
                 "whisper-cli.exe",
@@ -39,8 +39,8 @@
             ]
         },
         "arm64": {
-            "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5454/whisper-bin-win-cpu-arm64.zip",
-            "hash": "28c37e7b598c3d9bbfef94f3bd67f2ee6f12b7c86f3da5edcf5e4308d615ff6d",
+            "url": "https://github.com/ggml-org/whisper.cpp/releases/download/b5907/whisper-bin-win-cpu-arm64.zip",
+            "hash": "4e522946827dcbc517d3cd7ee8d6cfe760e8143076924ac8513622694aa3ccfd",
             "bin": [
                 "whisper-bench.exe",
                 "whisper-cli.exe",
