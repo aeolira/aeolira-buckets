@@ -1,12 +1,12 @@
 {
-    "version": "11670",
+    "version": "11673",
     "homepage": "https://labplot.kde.org/",
     "description": "A free, open source, and cross-platform Data Visualization and Analysis software accessible to everyone.",
     "license": "Apache-2.0,BSD-3-Clause,CC0-1.0,CC-BY-3.0,GPL-2.0-only,GPL-2.0-or-later,GPL-3.0-only,GPL-3.0-or-later,LGPL-3.0-or-later,MIT",
     "architecture": {
         "64bit": {
-            "url": "https://cdn.kde.org/ci-builds/education/labplot/master/windows/labplot-master-11670-windows-cl-msvc2022-x86_64.7z",
-            "hash": "cfdf3217ac87c2c3470f4e081bcd2bd48b13801d65a98220c3f773948088fb73"
+            "url": "https://cdn.kde.org/ci-builds/education/labplot/master/windows/labplot-master-11673-windows-cl-msvc2022-x86_64.7z",
+            "hash": "324e5c0a972e70d3376a7edc6e0819c1fedb5f3fdde80cd687780d0c51588983"
         }
     },
     "shortcuts": [
