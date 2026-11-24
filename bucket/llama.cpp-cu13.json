@@ -1,16 +1,16 @@
 {
-    "version": "b12651",
+    "version": "b12681",
     "description": "Inference of LLaMA model in pure C/C++ (CUDA 13 version)",
     "homepage": "https://llama.app",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12651/llama-b12651-bin-win-cuda-13.5-x64.zip",
-            "hash": "5ad87e0771f3a129f6461b5fc706d8c2c5e5b71b2bd1f953a4221ca4d7797fef"
+            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12681/llama-b12681-bin-win-cuda-13.5-x64.zip",
+            "hash": "184f8512ff6e8d16d543033f76d529025bf87130fb43462328871c61fa8e5bdc"
         },
         "arm64": {
-            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12651/llama-b12651-bin-win-cuda-13.5-arm64.zip",
-            "hash": "d09eea1cf58f99debec50c1a7e2189677cf0be9565847720a08cf53a0cc71c11"
+            "url": "https://github.com/ggml-org/llama.cpp/releases/download/b12681/llama-b12681-bin-win-cuda-13.5-arm64.zip",
+            "hash": "5b71c3d1a9559b5316ad8633853c467f07c685d952d5517e0b155e5994fdbf8b"
         }
     },
     "bin": [

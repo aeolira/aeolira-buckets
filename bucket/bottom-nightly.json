@@ -1,20 +1,20 @@
 {
-    "version": "20261122-eb8735ee-1795326587",
+    "version": "20261124-d293a7d7-1795506083",
     "description": "Graphical process/system monitor",
     "homepage": "https://github.com/ClementTsang/bottom",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/ClementTsang/bottom/releases/download/nightly-eb8735ee-1795326587/bottom_x86_64-pc-windows-msvc.zip",
-            "hash": "57f078d444233b799a6ad123744deb0e69f6ea07e74ae1aba39121c2156242ea"
+            "url": "https://github.com/ClementTsang/bottom/releases/download/nightly-d293a7d7-1795506083/bottom_x86_64-pc-windows-msvc.zip",
+            "hash": "b463ed1fa12191b1665cafeb46de1f5e7c61f5ebf0a7f3b05dbd6ffd04e9bfb3"
         },
         "32bit": {
-            "url": "https://github.com/ClementTsang/bottom/releases/download/nightly-eb8735ee-1795326587/bottom_i686-pc-windows-msvc.zip",
-            "hash": "0b441e9eddb48f0b775705760beb9b310d89fb13f8a4e64554ec80b90f8f7209"
+            "url": "https://github.com/ClementTsang/bottom/releases/download/nightly-d293a7d7-1795506083/bottom_i686-pc-windows-msvc.zip",
+            "hash": "7fe22ba8b31bb8a2dd8c1e5ec65ad7da3725f3e55996033da4782b94d0c5c553"
         },
         "arm64": {
-            "url": "https://github.com/ClementTsang/bottom/releases/download/nightly-eb8735ee-1795326587/bottom_aarch64-pc-windows-msvc.zip",
-            "hash": "21335afcb2071dff224a457d1eae8defab7b8e2183af70187f4426cccb3503fa"
+            "url": "https://github.com/ClementTsang/bottom/releases/download/nightly-d293a7d7-1795506083/bottom_aarch64-pc-windows-msvc.zip",
+            "hash": "a9260d66448cff12cc8587304f4898aa320c8027118678db7d50a3cc7d13f868"
         }
     },
     "bin": "btm.exe",
