@@ -1,18 +1,18 @@
 {
-    "version": "20261123-129241-g05c674c913",
+    "version": "20261125-129288-gc81e35cf2b",
     "description": "A complete, cross-platform solution to record, convert and stream audio and video.",
     "homepage": "https://ffmpeg.org",
     "license": "GPL-3.0-or-later",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2026-11-23-12-43/ffmpeg-N-129241-g05c674c913-win64-gpl.zip",
-            "hash": "694e2e119adff51b6c7b7db260173760ea308f343cbff88c04883dba7a8b1a1c",
-            "extract_dir": "ffmpeg-N-129241-g05c674c913-win64-gpl"
+            "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2026-11-25-12-41/ffmpeg-N-129288-gc81e35cf2b-win64-gpl.zip",
+            "hash": "ee17bc29170b6f1d6685985260900c57c92967aaaabaf6f2bc8c65b67d76b8c5",
+            "extract_dir": "ffmpeg-N-129288-gc81e35cf2b-win64-gpl"
         },
         "arm64": {
-            "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2026-11-23-12-43/ffmpeg-N-129241-g05c674c913-winarm64-gpl.zip",
-            "hash": "7860d650af7de3ff6bd2c9430b7385f9e7d36afaed1d1cbcb71ce7980da34855",
-            "extract_dir": "ffmpeg-N-129241-g05c674c913-winarm64-gpl"
+            "url": "https://github.com/BtbN/FFmpeg-Builds/releases/download/autobuild-2026-11-25-12-41/ffmpeg-N-129288-gc81e35cf2b-winarm64-gpl.zip",
+            "hash": "2495cf57739fabea2f734432155634011afca0ad5fc6cde316b8a2579c59bcd1",
+            "extract_dir": "ffmpeg-N-129288-gc81e35cf2b-winarm64-gpl"
         }
     },
     "bin": [
