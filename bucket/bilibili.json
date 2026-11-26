@@ -1,5 +1,5 @@
 {
-    "version": "1.20.0",
+    "version": "1.21.0",
     "description": "Bilibili Windows client.",
     "homepage": "https://www.bilibili.com",
     "license": {
@@ -8,8 +8,8 @@
     },
     "architecture": {
         "64bit": {
-            "url": "https://dl.hdslb.com/mobile/pack/bili_win/30389763/public/bilibili-setup-v1.20.0.exe#/dl.7z",
-            "hash": "sha512:416c74a98e53ccc2c038f745104cfabb67d98252b6653bc3da19ea3aa66671199a40ac38adfe61f7d8e8687b32b2e41c1dff960f7a821ab8e8d7ac5bdee75613",
+            "url": "https://dl.hdslb.com/mobile/pack/bili_win/31979478/public/bilibili-setup-v1.21.0.exe#/dl.7z",
+            "hash": "sha512:29461ac7601b4b9afbc48fd50dc9b103a3e42f121962b962ed662bd133fee6dacf5c3913eedcab4142925b78bd0982b05490f1bde0a1aaf7f0f26ef3bddf0e28",
             "extract_dir": "$PLUGINSDIR"
         }
     },
